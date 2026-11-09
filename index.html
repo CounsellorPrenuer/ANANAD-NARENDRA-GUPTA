@@ -309,7 +309,104 @@
 
           <!-- Dual Pricing Cards Grid (Replicating Mentoria 1, 2, 3, 4) -->
           <div class="pricing-cards-display" id="pricing-cards-display">
-            <!-- Dynamic Standard & Premium Cards Injected Here -->
+            <!-- STANDARD PLAN CARD -->
+            <article class="mentoria-plan-card standard-card">
+              <div class="plan-kind-badge">STANDARD</div>
+              <div class="plan-card-header">
+                <h3 class="plan-card-title">Discover</h3>
+                <div class="plan-price-row">
+                  <span class="plan-currency-symbol">₹</span>
+                  <span class="plan-price-val">5,500</span>
+                </div>
+              </div>
+
+              <ul class="plan-features-list">
+                <li class="plan-feature-item">
+                  <span class="feature-status-icon check">✓</span>
+                  <span class="feature-text">Psychometric assessment to measure your interests</span>
+                </li>
+                <li class="plan-feature-item">
+                  <span class="feature-status-icon check">✓</span>
+                  <span class="feature-text">1 career counselling session with Mentoria's expert career coaches</span>
+                </li>
+                <li class="plan-feature-item">
+                  <span class="feature-status-icon check">✓</span>
+                  <span class="feature-text">Lifetime access to Knowledge Gateway</span>
+                </li>
+                <li class="plan-feature-item">
+                  <span class="feature-status-icon check">✓</span>
+                  <span class="feature-text">Invites to live webinars by industry experts</span>
+                </li>
+                <li class="plan-feature-item">
+                  <span class="feature-status-icon cross">✕</span>
+                  <span class="feature-text strikethrough">Customised reports after each session with education pathways</span>
+                </li>
+                <li class="plan-feature-item">
+                  <span class="feature-status-icon cross">✕</span>
+                  <span class="feature-text strikethrough">Guidance on studying abroad</span>
+                </li>
+                <li class="plan-feature-item">
+                  <span class="feature-status-icon cross">✕</span>
+                  <span class="feature-text strikethrough">CV building during internships/graduation</span>
+                </li>
+              </ul>
+
+              <div class="plan-card-action">
+                <a href="#contact-us" class="btn-mentoria-buy" onclick="selectPlan('Discover (8-9 STUDENTS)', '5,500')">
+                  BUY NOW
+                </a>
+              </div>
+            </article>
+
+            <!-- PREMIUM PLAN CARD -->
+            <article class="mentoria-plan-card premium-card">
+              <div class="card-corner-arc"></div>
+              <div class="plan-kind-badge">PREMIUM</div>
+              <div class="plan-card-header">
+                <h3 class="plan-card-title">Discover plus+</h3>
+                <div class="plan-price-row">
+                  <span class="plan-currency-symbol">₹</span>
+                  <span class="plan-price-val">15,000</span>
+                </div>
+              </div>
+
+              <ul class="plan-features-list">
+                <li class="plan-feature-item">
+                  <span class="feature-status-icon check">✓</span>
+                  <span class="feature-text">Psychometric assessments to measure your interests, personality and abilities</span>
+                </li>
+                <li class="plan-feature-item">
+                  <span class="feature-status-icon check">✓</span>
+                  <span class="feature-text">8 career counselling sessions (1 every year) with Mentoria's expert career coaches until graduation</span>
+                </li>
+                <li class="plan-feature-item">
+                  <span class="feature-status-icon check">✓</span>
+                  <span class="feature-text">Lifetime access to Knowledge Gateway</span>
+                </li>
+                <li class="plan-feature-item">
+                  <span class="feature-status-icon check">✓</span>
+                  <span class="feature-text">Invites to live webinars by industry experts</span>
+                </li>
+                <li class="plan-feature-item">
+                  <span class="feature-status-icon check">✓</span>
+                  <span class="feature-text">Customised reports after each session with education pathways</span>
+                </li>
+                <li class="plan-feature-item">
+                  <span class="feature-status-icon check">✓</span>
+                  <span class="feature-text">Guidance on studying abroad</span>
+                </li>
+                <li class="plan-feature-item">
+                  <span class="feature-status-icon check">✓</span>
+                  <span class="feature-text">CV building during internships/graduation</span>
+                </li>
+              </ul>
+
+              <div class="plan-card-action">
+                <a href="#contact-us" class="btn-mentoria-buy" onclick="selectPlan('Discover plus+ (8-9 STUDENTS)', '15,000')">
+                  BUY NOW
+                </a>
+              </div>
+            </article>
           </div>
         </div>
 
@@ -323,7 +420,149 @@
           </div>
 
           <div class="customise-grid" id="customise-cards-grid">
-            <!-- Dynamic 12 Custom Cards Injected Here -->
+            <div class="custom-mentoria-card">
+              <div class="custom-card-graphic custom-graphic-resume">
+                <i data-lucide="file-text"></i>
+              </div>
+              <div class="custom-card-body">
+                <h4 class="custom-card-title">CV Building</h4>
+                <div class="custom-card-price">₹2000</div>
+                <p class="custom-card-desc">Is your CV making a great first impression on your behalf? Our HR experts will help you build the kind of CV that stands out from the crowd and increases your chances of getting interview calls.</p>
+                <a href="#contact-us" class="btn-custom-buy" onclick="selectPlan('CV Building', '2000')">BUY NOW</a>
+              </div>
+            </div>
+
+            <div class="custom-mentoria-card">
+              <div class="custom-card-graphic custom-graphic-linkedin">
+                <i data-lucide="linkedin"></i>
+              </div>
+              <div class="custom-card-body">
+                <h4 class="custom-card-title">Linkedin Profile Building</h4>
+                <div class="custom-card-price">₹2000</div>
+                <p class="custom-card-desc">Revamp your LinkedIn profile with recommendations from recruitment experts to showcase your career journey and increase your chances of interview calls.</p>
+                <a href="#contact-us" class="btn-custom-buy" onclick="selectPlan('Linkedin Profile Building', '2000')">BUY NOW</a>
+              </div>
+            </div>
+
+            <div class="custom-mentoria-card">
+              <div class="custom-card-graphic custom-graphic-resume">
+                <i data-lucide="file-check"></i>
+              </div>
+              <div class="custom-card-body">
+                <h4 class="custom-card-title">Linkedin Profile + CV Building</h4>
+                <div class="custom-card-price">₹3500</div>
+                <p class="custom-card-desc">Build the kind of profile recruiters would love to spend time on. Get your CV and LinkedIn profile built by our HR/Recruitment experts.</p>
+                <a href="#contact-us" class="btn-custom-buy" onclick="selectPlan('Linkedin Profile + CV Building', '3500')">BUY NOW</a>
+              </div>
+            </div>
+
+            <div class="custom-mentoria-card">
+              <div class="custom-card-graphic custom-graphic-briefcase">
+                <i data-lucide="briefcase"></i>
+              </div>
+              <div class="custom-card-body">
+                <h4 class="custom-card-title">Job Application Strategy</h4>
+                <div class="custom-card-price">₹4000</div>
+                <p class="custom-card-desc">Build the right pipeline for job interviews through a customised job application tracker with information on companies, job postings and steps you need to follow to land your dream job.</p>
+                <a href="#contact-us" class="btn-custom-buy" onclick="selectPlan('Job Application Strategy', '4000')">BUY NOW</a>
+              </div>
+            </div>
+
+            <div class="custom-mentoria-card">
+              <div class="custom-card-graphic custom-graphic-clipboard">
+                <i data-lucide="clipboard-list"></i>
+              </div>
+              <div class="custom-card-body">
+                <h4 class="custom-card-title">Career Report</h4>
+                <div class="custom-card-price">₹2500</div>
+                <p class="custom-card-desc">Get a detailed report of your psychometric assessment for a scientific analysis of your interests, personality and abilities. Find out where your interests lie and which future paths you can potentially consider.</p>
+                <a href="#contact-us" class="btn-custom-buy" onclick="selectPlan('Career Report', '2500')">BUY NOW</a>
+              </div>
+            </div>
+
+            <div class="custom-mentoria-card">
+              <div class="custom-card-graphic custom-graphic-clipboard">
+                <i data-lucide="clipboard-list"></i>
+              </div>
+              <div class="custom-card-body">
+                <h4 class="custom-card-title">Career Report + Career Counselling</h4>
+                <div class="custom-card-price">₹4000</div>
+                <p class="custom-card-desc">Connect with India's top career coaches to analyse your psychometric report, get a detailed action plan for your development areas and shortlist the top three career paths you're most likely to enjoy and excel at.</p>
+                <a href="#contact-us" class="btn-custom-buy" onclick="selectPlan('Career Report + Career Counselling', '4000')">BUY NOW</a>
+              </div>
+            </div>
+
+            <div class="custom-mentoria-card">
+              <div class="custom-card-graphic custom-graphic-default">
+                <i data-lucide="messages-square"></i>
+              </div>
+              <div class="custom-card-body">
+                <h4 class="custom-card-title">Knowledge Gateway + Career Helpline Access</h4>
+                <div class="custom-card-price">₹250/month</div>
+                <p class="custom-card-desc">Unlock holistic information on your career paths and get direct access to Mentoria's experts, who will resolve your career-related queries through our dedicated Career Helpline. Validate your career decisions from now until you land a job you love.</p>
+                <a href="#contact-us" class="btn-custom-buy" onclick="selectPlan('Knowledge Gateway + Career Helpline Access', '250/month')">BUY NOW</a>
+              </div>
+            </div>
+
+            <div class="custom-mentoria-card">
+              <div class="custom-card-graphic custom-graphic-default">
+                <i data-lucide="messages-square"></i>
+              </div>
+              <div class="custom-card-body">
+                <h4 class="custom-card-title">One-to-One Session with a Career Expert</h4>
+                <div class="custom-card-price">₹3500 per interaction for 1 hour</div>
+                <p class="custom-card-desc">Resolve your career queries and glimpse into your future world through a one-on-one session with an expert from your chosen field.</p>
+                <a href="#contact-us" class="btn-custom-buy" onclick="selectPlan('One-to-One Session with a Career Expert', '3500 per interaction for 1 hour')">BUY NOW</a>
+              </div>
+            </div>
+
+            <div class="custom-mentoria-card">
+              <div class="custom-card-graphic custom-graphic-globe">
+                <i data-lucide="globe"></i>
+              </div>
+              <div class="custom-card-body">
+                <h4 class="custom-card-title">Overseas Admission Planner</h4>
+                <div class="custom-card-price">₹3000 for a planner with top 10 colleges in India OR any 1 country abroad</div>
+                <p class="custom-card-desc">Planning your masters studies? Get unbiased recommendations and details on your future college options in India and abroad, organised in one resourceful planner.</p>
+                <a href="#contact-us" class="btn-custom-buy" onclick="selectPlan('Overseas Admission Planner', '3000')">BUY NOW</a>
+              </div>
+            </div>
+
+            <div class="custom-mentoria-card">
+              <div class="custom-card-graphic custom-graphic-globe">
+                <i data-lucide="globe"></i>
+              </div>
+              <div class="custom-card-body">
+                <h4 class="custom-card-title">Overseas Admission: SOP Brainstorm</h4>
+                <div class="custom-card-price">₹3000 for a one-hour session</div>
+                <p class="custom-card-desc">Increase your chances of getting admissions in your dream college by structuring your SOP in the most ideal manner through discussions with an overseas admissions expert.</p>
+                <a href="#contact-us" class="btn-custom-buy" onclick="selectPlan('Overseas Admission: SOP Brainstorm', '3000')">BUY NOW</a>
+              </div>
+            </div>
+
+            <div class="custom-mentoria-card">
+              <div class="custom-card-graphic custom-graphic-globe">
+                <i data-lucide="globe"></i>
+              </div>
+              <div class="custom-card-body">
+                <h4 class="custom-card-title">Overseas Admission: SOP Review</h4>
+                <div class="custom-card-price">₹2500</div>
+                <p class="custom-card-desc">Is your SOP/Essay good enough to get you shortlisted? Get it reviewed by our team of overseas admissions experts to make sure you make the cut.</p>
+                <a href="#contact-us" class="btn-custom-buy" onclick="selectPlan('Overseas Admission: SOP Review', '2500')">BUY NOW</a>
+              </div>
+            </div>
+
+            <div class="custom-mentoria-card">
+              <div class="custom-card-graphic custom-graphic-interview">
+                <i data-lucide="user-check"></i>
+              </div>
+              <div class="custom-card-body">
+                <h4 class="custom-card-title">Interview Prep Session</h4>
+                <div class="custom-card-price">₹2000</div>
+                <p class="custom-card-desc">Ace your upcoming interviews with guidance from India's top HR experts and increase your chances of landing your dream job.</p>
+                <a href="#contact-us" class="btn-custom-buy" onclick="selectPlan('Interview Prep Session', '2000')">BUY NOW</a>
+              </div>
+            </div>
           </div>
         </div>
 
